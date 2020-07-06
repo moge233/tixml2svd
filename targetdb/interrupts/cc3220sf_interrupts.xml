@@ -1,0 +1,28 @@
+<interrupts>
+	<interrupt name="GPIOA0" description="GPIO port S0" value="16"/>
+	<interrupt name="GPIOA1" description="GPIO port S1" value="17"/>
+	<interrupt name="GPIOA2" description="GPIO port S2" value="18"/>
+	<interrupt name="GPIOA3" description="GPIO port S3" value="19"/>
+	<interrupt name="UART0" description="UART0 Rx and Tx" value="21"/>
+	<interrupt name="UART1" description="UART1 Rx and Tx" value="22"/>
+	<interrupt name="I2C" description="I2C controller" value="24"/>
+	<interrupt name="ADC0" description="ADC Channel 0" value="30"/>
+	<interrupt name="ADC1" description="ADC Channel 1" value="31"/>
+	<interrupt name="ADC2" description="ADC Channel 2" value="32"/>
+	<interrupt name="ADC3" description="ADC Channel 3" value="33"/>
+	<interrupt name="WDT" description="Watchdog Timer" value="34"/>
+	<interrupt name="TIMERA0A" description="16/32-Bit General Purpose Timer A0A" value="35"/>
+	<interrupt name="TIMERA0B" description="16/32-Bit General Purpose Timer A0B" value="36"/>
+	<interrupt name="TIMERA1A" description="16/32-Bit General Purpose Timer A1A" value="37"/>
+	<interrupt name="TIMERA1B" description="16/32-Bit General Purpose Timer A1B" value="38"/>
+	<interrupt name="TIMERA2A" description="16/32-Bit General Purpose Timer A2A" value="39"/>
+	<interrupt name="TIMERA2B" description="16/32-Bit General Purpose Timer A2B" value="40"/>
+	<interrupt name="TIMERA3A" description="16/32-Bit General Purpose Timer A3A" value="51"/>
+	<interrupt name="TIMERA3B" description="16/32-Bit General Purpose Timer A3B" value="52"/>
+	<interrupt name="UDMA" description="uDMA Software Interrupt" value="62"/>
+	<interrupt name="I2S" description="I2S controller" value="177"/>
+	<interrupt name="CAM" description="Camera" value="179"/>
+	<interrupt name="RAMWR" description="RAM WR Error" value="184"/>
+	<interrupt name="NET" description="Network Interrupt" value="187"/>
+	<interrupt name="SPI" description="SPI Interrupt" value="192"/>
+</interrupts>

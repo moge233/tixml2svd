@@ -1,0 +1,431 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module id="apps_rcm" HW_revision="">
+    <register id="CAMCLKCFG" width="32" offset="0x0" description="">
+        <bitfield id="DIVOFFTIM" description="Configuration of OFF-TIME for dividing PLL clk (240 MHz) in generation of Camera func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="10" end="8" width="3" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="NU1" description="" begin="7" end="3" width="5" rwaccess="R">
+        </bitfield>
+        <bitfield id="DIVONTIM" description="Configuration of ON-TIME for dividing PLL clk (240 MHz) in generation of Camera func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="2" end="0" width="3" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="CAMCLKEN" width="32" offset="0x4" description="">
+        <bitfield id="NU1" description="" begin="23" end="17" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="DSLPCLKEN" description="CAMERA_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="CAMERA_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU3" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="CAMERA_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="CAMSWRST" width="32" offset="0x8" description="">
+	<bitfield id="ENSTS" description="CAMERA_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="CAMERA_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="MCASPCLKEN" width="32" offset="0x14" description="">
+        <bitfield id="NU1" description="" begin="23" end="17" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="DSLPCLKEN" description="MCASP_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="MCASP_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU3" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="MCASP_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="MCASPSWRST" width="32" offset="0x18" description="">
+	<bitfield id="ENSTS" description="MCASP_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="MCASP_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="SDIOMCLKCFG" width="32" offset="0x20" description="">
+        <bitfield id="DIVOFFTIM" description="Configuration of OFF-TIME for dividing PLL clk (240 MHz) in generation of MMCHS func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="10" end="8" width="3" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="NU1" description="" begin="7" end="3" width="5" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="DIVONTIM" description="Configuration of ON-TIME for dividing PLL clk (240 MHz) in generation of MMCHS func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="2" end="0" width="3" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="SDIOMCLKEN" width="32" offset="0x24" description="">
+        <bitfield id="NU1" description="" begin="23" end="17" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="DSLPCLKEN" description="MMCHS_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="NU2" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="MMCHS_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU3" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="MMCHS_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="SDIOMSWRST" width="32" offset="0x28" description="">
+	<bitfield id="ENSTS" description="MMCHS_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="MMCHS_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="APSPICLKCFG" width="32" offset="0x2C" description="">
+	<bitfield id="BAUDSEL" description="MCSPI_A1_BAUD_CLK_SEL" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="11" width="5" rwaccess="R">
+        </bitfield>
+        <bitfield id="DIVOFFTIM" description="Configuration of OFF-TIME for dividing PLL clk (240 MHz) in generation of MCSPI_A1 func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="10" end="8" width="3" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="NU2" description="" begin="7" end="3" width="5" rwaccess="R">
+        </bitfield>
+        <bitfield id="DIVONTIM" description="Configuration of ON-TIME for dividing PLL clk (240 MHz) in generation of MCSPI_A1 func-clk : &amp;quot;000&amp;quot; - 1 &amp;quot;001&amp;quot; - 2 &amp;quot;010&amp;quot; - 3 &amp;quot;011&amp;quot; - 4 &amp;quot;100&amp;quot; - 5 &amp;quot;101&amp;quot; - 6 &amp;quot;110&amp;quot; - 7 &amp;quot;111&amp;quot; - 8" begin="2" end="0" width="3" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="APSPICLKEN" width="32" offset="0x30" description="">
+        <bitfield id="NU1" description="Not used" begin="23" end="17" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="DSLPCLKEN" description="MCSPI_A1_DSLP_CLK_ENABLE" begin="16" end="16" rwaccess="R">
+	</bitfield>
+        <bitfield id="NU2" description="Not used" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="MCSPI_A1_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU3" description="Not used" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="MCSPI_A1_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="APSPISWRST" width="32" offset="0x34" description="">
+	<bitfield id="ENSTS" description="MCSPI_A1_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="MCSPI_A1_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="DMACLKEN" width="32" offset="0x48" description="">
+	<bitfield id="DSLPCLKEN" description="UDMA_A_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="Not used" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="UDMA_A_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="Not used" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="UDMA_A_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="DMASWRST" width="32" offset="0x4C" description="">
+	<bitfield id="ENSTS" description="UDMA_A_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="UDMA_A_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO0CLKEN" width="32" offset="0x50" description="">
+	<bitfield id="DSLPCLKEN" description="GPIO_A_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R/W">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPIO_A_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R/W">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPIO_A_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO0SWRST" width="32" offset="0x54" description="">
+	<bitfield id="ENSTS" description="GPIO_A_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPIO_A_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO1CLKEN" width="32" offset="0x58" description="">
+	<bitfield id="DSLPCLKEN" description="GPIO_B_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPIO_B_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPIO_B_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO1SWRST" width="32" offset="0x5C" description="">
+	<bitfield id="ENSTS" description="GPIO_B_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPIO_B_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO2CLKEN" width="32" offset="0x60" description="">
+	<bitfield id="DSLPCLKEN" description="GPIO_C_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPIO_C_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPIO_C_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO2SWRST" width="32" offset="0x64" description="">
+	<bitfield id="ENSTS" description="GPIO_C_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPIO_C_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO3CLKEN" width="32" offset="0x68" description="">
+	<bitfield id="DSLPCLKEN" description="GPIO_D_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPIO_D_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPIO_D_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO3SWRST" width="32" offset="0x6C" description="">
+	<bitfield id="ENSTS" description="GPIO_D_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPIO_D_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO4CLKEN" width="32" offset="0x70" description="">
+	<bitfield id="DSLPCLKEN" description="GPIO_E_DSLP_CLK_ENABLE" begin="16" end="16" width="16" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPIO_E_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPIO_E_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPIO4SWRST" width="32" offset="0x74" description="">
+	<bitfield id="ENSTS" description="GPIO_E_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPIO_E_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="WDTCLKEN" width="32" offset="0x78" description="">
+        <bitfield id="BAUDCLKSEL" description="&amp;quot;00&amp;quot; - Sysclk ; &amp;quot;01&amp;quot; - REF_CLK (38.4 MHz) ; &amp;quot;10/11&amp;quot; - Slow_clk" begin="25" end="24" width="2" rwaccess="R/W">
+        </bitfield>
+	<bitfield id="DSLPCLKEN" description="WDOG_A_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="WDOG_A_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+        </bitfield>
+	<bitfield id="RUNCLKEN" description="WDOG_A_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="WDTSWRST" width="32" offset="0x7C" description="">
+	<bitfield id="ENSTS" description="WDOG_A_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="WDOG_A_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="UART0CLKEN" width="32" offset="0x80" description="">
+	<bitfield id="UART0DSLPCLKEN" description="UART_A0_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="UART0SLPCLKEN" description="UART_A0_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="UART0RCLKEN" description="UART_A0_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="UART0SWRST" width="32" offset="0x84" description="">
+	<bitfield id="ENSTS" description="UART_A0_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="UART_A0_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="UART1CLKEN" width="32" offset="0x88" description="">
+	<bitfield id="DSLPCLKEN" description="UART_A1_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="UART_A1_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="UART_A1_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="UART1SWRST" width="32" offset="0x8C" description="">
+	<bitfield id="ENSTS" description="UART_A1_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="UART_A1_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT0CLKEN" width="32" offset="0x90" description="">
+	<bitfield id="DSLPCLKEN" description="GPT_A0_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPT_A0_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPT_A0_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT0SWRST" width="32" offset="0x94" description="">
+	<bitfield id="ENSTS" description="GPT_A0_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPT_A0_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT1CLKEN" width="32" offset="0x98" description="">
+	<bitfield id="DSLPCLKEN" description="GPT_A1_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPT_A1_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPT_A1_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT1SWRST" width="32" offset="0x9C" description="">
+	<bitfield id="ENSTS" description="GPT_A1_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPT_A1_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT2CLKEN" width="32" offset="0xA0" description="">
+	<bitfield id="DSLPCLKEN" description="GPT_A2_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPT_A2_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPT_A2_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT2SWRST" width="32" offset="0xA4" description="">
+	<bitfield id="ENSTS" description="GPT_A2_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPT_A2_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT3CLKEN" width="32" offset="0xA8" description="">
+	<bitfield id="DSLPCLKEN" description="GPT_A3_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="GPT_A3_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="GPT_A3_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="GPT3SWRST" width="32" offset="0xAC" description="">
+	<bitfield id="ENSTS" description="GPT_A3_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="GPT_A3_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="MCASPCLKCFG0" width="32" offset="0xB0" description="">
+        <bitfield id="DIVISR" description="MCASP_FRAC_DIV_DIVISOR" begin="25" end="16" width="10" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="FRACTN" description="MCASP_FRAC_DIV_FRACTION" begin="15" end="0" width="16" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="MCASPCLKCFG1" width="32" offset="0xB4" description="">
+        <bitfield id="DIVIDRSWRST" description="MCASP_FRAC_DIV_SOFT_RESET" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+	<bitfield id="SPARE" description="MCASP_FRAC_DIV_PERIOD" begin="9" end="0" width="10" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="I2CCLKEN" width="32" offset="0xD8" description="">
+	<bitfield id="DSLPCLKEN" description="I2C_DSLP_CLK_ENABLE" begin="16" end="16" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU1" description="" begin="15" end="9" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="SLPCLKEN" description="I2C_SLP_CLK_ENABLE" begin="8" end="8" width="1" rwaccess="R/W">
+	</bitfield>
+        <bitfield id="NU2" description="" begin="7" end="1" width="7" rwaccess="R">
+	</bitfield>
+	<bitfield id="RUNCLKEN" description="I2C_RUN_CLK_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="I2CSWRST" width="32" offset="0xDC" description="">
+	<bitfield id="ENSTS" description="I2C_ENABLED_STATUS" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="SWRST" description="I2C_SOFT_RESET" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="LPDSREQ" width="32" offset="0xE4" description="">
+	<bitfield id="LPDSREQ" description="APPS_LPDS_REQ" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="TURBOREQ" width="32" offset="0xEC" description="">
+        <bitfield id="TURBOREQ" description="APPS_TURBO_REQ" begin="0" end="0" width="1" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="DSLPWAKECFG" width="32" offset="0x108" description="">
+	<bitfield id="EXITDSLPBYNWPEN" description="DSLP_WAKE_FROM_NWP_ENABLE" begin="1" end="1" width="1" rwaccess="R/W">
+	</bitfield>
+	<bitfield id="EXITDSLPBYTMREN" description="DLSP_WAKE_FROM_TIMER_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="DSLPTIMRCFG" width="32" offset="0x10C" description="">
+        <bitfield id="DSLP_WAKE_TIMER_OPP_CFG" description="Configuration (in slow_clks) which says when to request for OPP during deep-sleep exit" begin="31" end="16" width="16" rwaccess="R/W">
+        </bitfield>
+        <bitfield id="DSLP_WAKE_TIMER_WAKE_CFG" description="Configuration (in slow_clks) which says when to request for WAKE during deep-sleep exit" begin="15" end="0" width="16" rwaccess="R/W">
+        </bitfield>
+    </register>
+    <register id="SLPWAKEEN" width="32" offset="0x110" description="">
+	<bitfield id="EITBYNWP" description="SLP_WAKE_FROM_NWP_ENABLE" begin="1" end="1" width="1" rwaccess="R/W">
+	</bitfield>
+	<bitfield id="EXITBYTIMR" description="SLP_WAKE_TIMER_ENABLE" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="SLPTMRCFG" width="32" offset="0x114" description="">
+	<bitfield id="TMRCFG" description="SLP_WAKE_TIMER_CFG" begin="31" end="0" width="32" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="WAKENWP" width="32" offset="0x118" description="">
+	<bitfield id="WAKENWP" description="APPS_TO_NWP_WAKEUP_REQUEST" begin="0" end="0" width="1" rwaccess="R/W">
+	</bitfield>
+    </register>
+    <register id="RCM_IS" width="32" offset="0x120" description="">
+	<bitfield id="WAKETIMRIRQ" description="" begin="14" end="14" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="PLLLOCK" description="" begin="12" end="12" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="EXITDSLPBYTMR" description="" begin="3" end="3" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="EXITSLPBYTMR" description="" begin="2" end="2" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="EXITDSLPBYNWP" description="" begin="1" end="1" width="1" rwaccess="R">
+	</bitfield>
+	<bitfield id="EXITSLPBYNWP" description="" begin="0" end="0" width="1" rwaccess="R">
+	</bitfield>
+    </register>
+    <register id="RCM_IEN" width="32" offset="0x124" description="">
+	 <bitfield id="WAKETIMERIRQ" description="" begin="2" end="2" width="1" rwaccess="R/W">
+	 </bitfield>
+	 <bitfield id="PLLLOCKIRQ" description="" begin="0" end="0" width="1" rwaccess="R/W">
+	 </bitfield>
+    </register>
+</module>
