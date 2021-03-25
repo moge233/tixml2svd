@@ -401,6 +401,5 @@ if __name__ == '__main__':
     args = arg_parser.parse_args()
     device_file = args.device_file
     output_file = args.output_file
-    validate = args.validate
 
     run(device_file, output_file)
