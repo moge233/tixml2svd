@@ -5,6 +5,7 @@ import argparse
 import sys
 import xml.etree.ElementTree as Et
 
+from lxml import etree
 import xmlschema
 
 # SVD schema generated from generateDS
@@ -211,7 +212,7 @@ def parse_module_file(path):
         if r.description == '':
             r.description = r.id
 
-        for child in item.getchildren():
+        for child in item:
             b = ModuleBitfield()
             for (K, V) in child.items():
                 setattr(b, K, V)
@@ -396,9 +397,6 @@ if __name__ == '__main__':
                             type=argparse.FileType('w+'),
                             default=sys.stdout,
                             help='output SVD file')
-    arg_parser.add_argument('-v', '--validate',
-                            action='store_true',
-                            help='validate the output SVD')
 
     args = arg_parser.parse_args()
     device_file = args.device_file
@@ -406,11 +404,3 @@ if __name__ == '__main__':
     validate = args.validate
 
     run(device_file, output_file)
-
-
-    if validate:
-        xsd_schema_file = './svd/CMSIS-SVD.xsd'
-        schema = xmlschema.XMLSchema(xsd_schema_file)
-        with open(output_file.name, 'r') as test:
-            schema.validate(test.read())
-        schema.validate()
