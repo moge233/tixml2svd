@@ -2,7 +2,7 @@
 DEVICE=CC3220SF
 DEVICE_SVD=$(DEVICE).svd
 
-PY=python3
+PY=python
 
 
 all:

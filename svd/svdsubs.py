@@ -1,8 +1,8 @@
 #!/usr/bin/env python
 
 #
-# Generated Tue Mar 31 10:01:41 2020 by generateDS.py version 2.35.17.
-# Python 3.6.9 (default, Nov  7 2019, 10:44:02)  [GCC 8.3.0]
+# Generated Tue Mar 15 23:42:49 2022 by generateDS.py version 2.35.17.
+# Python 3.9.5 (default, Nov 23 2021, 15:27:38)  [GCC 9.3.0]
 #
 # Command line options:
 #   ('-o', 'svd.py')
@@ -10,13 +10,13 @@
 #   ('--export', 'write literal etree validate')
 #
 # Command line arguments:
-#   svd/CMSIS-SVD.xsd
+#   CMSIS-SVD.xsd
 #
 # Command line:
-#   /home/matt/.virtualenvs/tixml2svd/bin/generateDS -o "svd.py" -s "svdsubs.py" --export="write literal etree validate" svd/CMSIS-SVD.xsd
+#   /home/matt/.virtualenvs/tixml2svd/bin/generateDS -o "svd.py" -s "svdsubs.py" --export="write literal etree validate" CMSIS-SVD.xsd
 #
 # Current working directory (os.getcwd()):
-#   tixml2svd
+#   svd
 #
 
 import os

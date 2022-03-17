@@ -370,7 +370,7 @@ def run(device_file, output_file):
         i.description = interrupt.description
         i.value = int(interrupt.value)
         interrupt_peripheral.add_interrupt(i)
-        svd_device.peripherals.add_peripheral(interrupt_peripheral)
+    svd_device.peripherals.add_peripheral(interrupt_peripheral)
 
     for inst in tdb.instances:
         if inst.href[:2] == '..':
